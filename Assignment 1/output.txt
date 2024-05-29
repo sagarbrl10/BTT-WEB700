@@ -1,0 +1,21 @@
+PS D:\Seneca\Sem 2\WEB700\Lab1> node a1.js
+Hello World
+200: Welcome to WEB700 Assignment 1
+200: This assignment was prepared by Sagar Baral
+200: Sagar Baral: sbaral10@myseneca.ca
+200: User Logged In
+200: Main Panel
+200: Logout Complete
+404: Unable to process PUT request for /
+404: Unable to process GET request for /randomPath1
+200: Main Panel
+200: Sagar Baral: sbaral10@myseneca.ca
+200: Sagar Baral: sbaral10@myseneca.ca
+200: This assignment was prepared by Sagar Baral
+200: This assignment was prepared by Sagar Baral
+200: Sagar Baral: sbaral10@myseneca.ca
+200: Welcome to WEB700 Assignment 1
+200: Sagar Baral: sbaral10@myseneca.ca
+404: Unable to process GET request for /login
+200: Welcome to WEB700 Assignment 1
+PS D:\Seneca\Sem 2\WEB700\Lab1>

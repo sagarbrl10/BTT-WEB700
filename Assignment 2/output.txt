@@ -1,0 +1,5 @@
+PS D:\Seneca\Sem 2\WEB700\Assignment 2> node a2.js
+Successfully retrieved 260 students
+Successfully retrieved 11 courses
+Successfully retrieved 30 TAs
+PS D:\Seneca\Sem 2\WEB700\Assignment 2>
