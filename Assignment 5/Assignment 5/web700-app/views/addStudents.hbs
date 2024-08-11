@@ -1,0 +1,75 @@
+<main class="container mt-5">
+    <h1>Add Student</h1>
+    <form method="POST" action="/students/add">
+        <h2>Personal Information</h2>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="addressStreet">Address (Street):</label>
+                <input type="text" class="form-control" id="addressStreet" name="addressStreet">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="addressCity">Address (City):</label>
+                <input type="text" class="form-control" id="addressCity" name="addressCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="addressProvince">Address (Province):</label>
+                <input type="text" class="form-control" id="addressProvince" name="addressProvince">
+            </div>
+        </div>
+        <h2>Academic Information</h2>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>College Employment:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="TA" id="taYes" value="Yes">
+                    <label class="form-check-label" for="taYes">Teaching Assistant</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="TA" id="taNo" value="No" checked>
+                    <label class="form-check-label" for="taNo">Not a Teaching Assistant</label>
+                </div>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Enrollment Status:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="status" id="statusFullTime" value="Full Time" checked>
+                    <label class="form-check-label" for="statusFullTime">Full Time</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="status" id="statusPartTime" value="Part Time">
+                    <label class="form-check-label" for="statusPartTime">Part Time</label>
+                </div>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="course">Enrolled in Course:</label>
+                {{#if courses}}
+                    <select class="form-select" name="course" id="course">
+                        <option value="">Select Course</option>
+                        {{#each courses}}
+                            <option value="{{courseId}}">{{courseCode}}</option>
+                        {{/each}}
+                    </select>
+                {{else}}
+                    <div>No Courses</div>
+                {{/if}}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Student</button>
+    </form>
+</main>
