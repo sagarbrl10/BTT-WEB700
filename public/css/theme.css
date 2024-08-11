@@ -1,0 +1,81 @@
+/* Import Google Fonts - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Body */
+body {
+  background: linear-gradient(to bottom, #9f8ec8 0%, #f5f3fc 100%); /* Purple gradient background */
+  color: #333; /* Dark text color */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #dccce6; /* Light purple background for navbar */
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* Styles for the navbar brand */
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    color: #ff6347; /* Change to your preferred color */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adjust the shadow properties as needed */
+}
+
+/* Ensure links maintain the same style */
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #ff6347;
+}
+
+
+/* Nav Link */
+.nav-link {
+  font-family: 'Roboto', sans-serif; /* Roboto font for nav links */
+  color: #000; /* Dark text color */
+}
+
+.nav-link:hover {
+  color: #6a1b9a; /* Dark purple on hover */
+}
+
+/* Form Group Label */
+.form-group label {
+  font-weight: bold; /* Bold font weight for form labels */
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #4a148c; /* Purple primary button background */
+  border: none; /* Remove button border */
+}
+
+.btn-primary:hover {
+  background-color: #6a1b9a; /* Darker purple on hover */
+}
+
+/* Table Cells Inside "Odd" Numbered Table Rows */
+.table tr:nth-child(odd) td {
+  background-color: #f2f2f2; /* Light grey background for odd rows */
+}
+
+/* Heading Elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; /* Roboto font for headings */
+  color: #4a148c; /* Purple heading text color */
+}
+
+/* Anchor Elements (HTML Links) */
+a {
+  color: #4a148c; /* Purple text color for links */
+}
+
+a:hover {
+  color: #6a1b9a; /* Darker purple on hover */
+}
+
+/* Fieldset Legends */
+legend {
+  font-family: 'Roboto', sans-serif; /* Roboto font for legends */
+  color: #4a148c; /* Purple legend text color */
+}
